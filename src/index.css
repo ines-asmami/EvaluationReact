@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  background-color:black;
+}
+
+header {
+  padding: 50px 15px 0px;
+}
+
+header h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 15px;
+}
+
+.barreDeRecherche {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: none;
+  outline: none;
+  background: #EEE;
+  border-radius: 8px;
+  font-size: 28px;
+  font-weight: 300;
+  transition: 0.4 ease-out;
+}
+
+.barreDeRecherche:focus {
+  box-shadow: 0px 0px 8px 3px gray;
+}
