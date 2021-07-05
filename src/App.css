@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background: black;
+  padding:10px;
+  margin-bottom: 50px;
+}
+
+.AppShow {
+  color: white;
 }
 
 .App-logo {
@@ -13,20 +20,6 @@
   }
 }
 
-.App-header {
-  background-color:black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +29,4 @@
     transform: rotate(360deg);
   }
 }
+

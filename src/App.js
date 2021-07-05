@@ -1,40 +1,35 @@
 import React from "react";
-import Recherche from "./components/Recherche";
-import shows from './shows.json'
+import Recherche from "./Recherche";
+import Shows from "./Shows";
+import './App.css'
+import { useState, useEffect } from "react";
 
 
 
-export default function App(props) {
-  const { show } = props;
-   const tags = show.genres.map(genre => <span key={genre}className="genre">{genre}</span>);
+export default function App() {
+
+
+  const [showsData, setShowsData] = useState([])
     
-    
+  useEffect (() => {
+  fetch ('http://localhost:4000/rest/shows') 
+  .then(response=> response.json())
+  .then(show=>setShowsData(show))
+  }, [])
+  
+
   return (
     <div className="App">
-      <header>
+      <header className="App-header">
         <h1>Plateforme NETFLI</h1>
+      <Recherche />
       </header>
       <main>
-      <Recherche />
-      <section className>
-         <div className="banniere">
-        <img src={show.images.banner} alt="banniere"></img>
-        <h1>
-          {show.title} ({show.creation})
-        </h1>
-        </div>
-       <div><img src={show.images.poster} alt="poster"></img></div>
-       <div><p>{show.description}</p></div>
-       <div>
-         <div>
-           {tags}
-           <div>
-           </div>
-         </div>
-       </div>
+      <section>
+      <Shows shows={showsData} />
        </section>
-
       </main>
+      <footer>Evaluation REACT</footer>
     </div>
   );
 }

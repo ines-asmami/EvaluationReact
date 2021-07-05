@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ShowList from './components/Films';
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import shows from './shows.json'
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <ShowList shows = {shows} />
+    <App shows={shows} />
   </React.StrictMode>,
   document.getElementById('root')
 );

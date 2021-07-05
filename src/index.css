@@ -1,38 +1,58 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'montserrat', sans-serif;
-  background-color:black;
+  background-color: black;
+}
+
+.App {
+  text-align: center;
+  background: black;
+  padding:10px;
+}
+
+.App-header {
+  padding-bottom: 20px;
 }
 
 header {
   padding: 50px 15px 0px;
+
 }
 
 header h1 {
   color: white;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 500;
   text-align: center;
+  padding:15px;
 }
+
+.AppShow {
+  background-color:#3a3a3a ;
+  margin: 100px;
+  margin-right: 200px;
+  margin-left: 200px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: #EEE 0px 0px 5px 10px;
+  font-size: 1.2em;
+}
+
 
 main {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+  color: white;
+  background-color: black;
 }
 
-section {
-  padding: 15px;
-}
+
 
 .barreDeRecherche {
+  margin: 0 auto;
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 15px;
   background: none;
   outline: none;
@@ -41,8 +61,37 @@ section {
   font-size: 28px;
   font-weight: 300;
   transition: 0.4 ease-out;
+  
 }
 
 .barreDeRecherche:focus {
   box-shadow: 0px 0px 8px 3px gray;
+}
+
+.genre {
+  margin: 20px;
+  margin-bottom: 100px;
+  padding: 10px;
+  font-style: italic;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.btn {
+  margin: 20px;
+  padding: 10px;
+}
+
+footer {
+  padding: 40px;
+  color: #EEE;
+  font-size: large;
+  font-weight: bold;
+  background-color: black;
+}
+
+.btn:focus {
+  box-shadow: 0px 0px 8px 3px gray;
+
 }
